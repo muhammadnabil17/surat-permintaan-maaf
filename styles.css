@@ -1,0 +1,139 @@
+body {
+    background-color: #0099FF;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.login-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0099FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #0077cc;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    display: none;
+}
+
+.letter {
+    display: none;
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    border: 2px solid #000;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: letterIn 2s ease-out;
+}
+
+.letter p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.letter::before,
+.letter::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    width: calc(100% - 40px);
+    height: 2px;
+    background-color: black;
+}
+
+.letter::before {
+    top: -15px;
+}
+
+.letter::after {
+    bottom: -15px;
+}
+
+.seal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+
+.seal:before {
+    content: '❤️';
+}
+
+.letter-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.letter-content {
+    animation: fadeIn 2.5s ease-out;
+}
+
+@keyframes letterIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

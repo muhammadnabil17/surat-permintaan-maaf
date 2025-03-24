@@ -3,8 +3,8 @@ function login() {
     var password = document.getElementById('password').value;
 
     // Ganti dengan username dan password yang kamu inginkan
-    var correctUsername = "Lukman nur hakim";
-    var correctPassword = "12345";
+    var correctUsername = "bubub dira";
+    var correctPassword = "nabilanddira";
 
     if (username === correctUsername && password === correctPassword) {
         // Tampilkan surat setelah login berhasil
